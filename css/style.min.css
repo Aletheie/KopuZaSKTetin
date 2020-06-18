@@ -1,0 +1,242 @@
+body {
+    --text-color: #fff;
+    --background-color: #012acf;
+    --background-color-2: #0103c8;
+    --link-color: #03b9f1;
+    --link-hover-color: #fff;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #fff;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(3, 185, 241)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+.js .loading::before {
+    content: '';
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--background-color)
+}
+
+.js .loading::after {
+    content: '';
+    position: fixed;
+    z-index: 10000;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 10px solid var(--background-color-2);
+    border-left-color: var(--text-color);
+    animation: loaderAnim .8s linear infinite forwards
+}
+
+@keyframes loaderAnim {
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+a:focus,
+a:hover {
+    color: var(--link-hover-color);
+    outline: 0
+}
+
+.morph-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none
+}
+
+.morph {
+    position: relative;
+    height: 100%;
+    fill: var(--background-color-2);
+    flex: none
+}
+
+@keyframes loaderAnim {
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+.hero-studna {
+    margin-left: 20%
+}
+
+.hero-studna-img {
+    margin-right: 20%
+}
+
+a {
+    color: #2c363f
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.hero-content h1 {
+    font-weight: 900;
+    font-size: 3.5rem;
+}
+
+.hero-content h3 {
+    font-weight: 700
+}
+
+.studna-obr {
+    margin-top: 35px;
+    margin-left: 30px;
+    padding-right: 0;
+    width: 80%
+}
+
+.social-icons-hero .fa {
+    border: 1px solid #fff;
+    color: #fff;
+    display: inline-block;
+    border-radius: 60px;
+    padding: 1.1em 1.2em;
+    margin-left: -17px
+}
+
+.social-icons-hero .fa:hover {
+    color: #0103c8;
+    background-color: #fff
+}
+
+.section-heading {
+    font-weight: 700;
+    font-size: 3.3rem
+}
+
+.btn-main {
+    background-color: #0641fc;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: 700
+}
+
+.btn-main:hover {
+    background-color: #fff;
+    color: #0103c8;
+    border: 1px solid #0103c8;
+    border-radius: 20px;
+    font-weight: 700
+}
+
+.logo-obr {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    height: 30%
+}
+
+@media only screen and (min-width:760px) {
+    .nas-klub {
+        height: 1150px !important
+    }
+}
+
+.service {
+    border-radius: 2rem
+}
+
+.service h3 {
+    font-weight: 700
+}
+
+.service i {
+    font-size: 2rem
+}
+
+.contact input,
+.contact textarea {
+    padding: 1rem;
+    font-size: 1rem;
+    width: 100%;
+    height: 125px
+}
+
+#error {
+    display: none
+}
+
+.gallery {
+    position: relative;
+    margin: 4% 15%
+}
+
+.photo {
+    max-width: 100%
+}
+
+@media (max-width:321px) {
+    .logo-obr {
+        height: 20%
+    }
+}
+
+@media (min-width:460px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-gap: 10px
+    }
+}
+
+@media (min-width:1000px) {
+    .gallery {
+        grid-template-columns: repeat(3, minmax(200px, 1fr))
+    }
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+    outline: 0
+}
+
+.kopu {
+    font-weight: 700;
+    font-size: 1.5rem
+}
+
+.raketka {
+    font-size: 1.4rem;
+    font-weight: 700
+}
+
+.copyright {
+    font-size: .9rem
+}
