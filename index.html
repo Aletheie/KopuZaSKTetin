@@ -5,7 +5,16 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Kopu za SK Tetín</title>
-	<link rel="shortcut icon" href="favicon.ico">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="theme-color" content="#ffffff">
+
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -36,7 +45,7 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item mx-2">
-								<a class="nav-link" href="#tetin"><span class="sr-only">(current)</span>SK Tetín</a>
+								<a class="nav-link" href="#tetin">SK Tetín</a>
 							</li>
 							<li class="nav-item mx-2">
 								<a class="nav-link" href="#sbirka">Sbírka</a>
@@ -190,23 +199,23 @@
 		</div>
 		<div class="gallery">
 			<a data-fancybox="gallery" href="galerie/Fotbal-Tetin-6.jpg"><img class="photo"
-					src="galerie/Fotbal-Tetin-6.jpg"></a>
+					alt="fotbal Tetín" src="galerie/Fotbal-Tetin-6.jpg"></a>
 			<a data-fancybox="gallery" href="galerie/Fotbal-Tetin-4.jpg"><img class="photo"
-					src="galerie/Fotbal-Tetin-4.jpg"></a>
+					alt="fotbal Tetín" src="galerie/Fotbal-Tetin-4.jpg"></a>
 			<a data-fancybox="gallery" href="galerie/Fotbal-Tetin-7.jpg"><img class="photo"
-					src="galerie/Fotbal-Tetin-7.jpg"></a>
+					alt="fotbal Tetín" src="galerie/Fotbal-Tetin-7.jpg"></a>
 			<a data-fancybox="gallery" href="galerie/Fotbal-Tetin-1.jpg"><img class="photo"
-					src="galerie/Fotbal-Tetin-1.jpg"></a>
+					alt="fotbal Tetín" src="galerie/Fotbal-Tetin-1.jpg"></a>
 			<a data-fancybox="gallery" href="galerie/Fotbal-Tetin-5.jpg"><img class="photo"
-					src="galerie/Fotbal-Tetin-5.jpg"></a>
+					alt="fotbal Tetín" src="galerie/Fotbal-Tetin-5.jpg"></a>
 			<a data-fancybox="gallery" href="galerie/Fotbal-Tetin-9.jpg"><img class="photo"
-					src="galerie/Fotbal-Tetin-9.jpg"></a>
-			<a data-fancybox="gallery" href="galerie/Fotbal-Tetin-2.jpg"><img class="photo"
-					src="galerie/Fotbal-Tetin-2.jpg"></a>
+					alt="fotbal Tetín" src="galerie/Fotbal-Tetin-9.jpg"></a>
+			<a data-fancybox="gallery" href="galerie/Fotbal-Tetin-8.jpg"><img class="photo"
+					alt="fotbal Tetín" src="galerie/Fotbal-Tetin-8.jpg"></a>
 			<a data-fancybox="gallery" href="galerie/Fotbal-Tetin-3.jpg"><img class="photo"
-					src="galerie/Fotbal-Tetin-3.jpg"></a>
+					alt="fotbal Tetín" src="galerie/Fotbal-Tetin-3.jpg"></a>
 			<a data-fancybox="gallery" href="galerie/Fotbal-Tetin-2.jpg"><img class="photo"
-					src="galerie/Fotbal-Tetin-2.jpg"></a>
+					alt="fotbal Tetín" src="galerie/Fotbal-Tetin-2.jpg"></a>
 		</div>
 
 		<!--Kontakt-->
@@ -218,7 +227,7 @@
 							<div class="col-md-6 text-center">
 								<div class="mt-5">
 									<h2 class="mb-2 pb-3 text-center section-heading">Kontaktujte nás</h2>
-									<a class="nav-link raketka" href="#" onclick="Znic()">nebo zničte tento web</a>
+									<a class="nav-link raketka" id="raketka" href="#" onclick="Znic()">nebo zničte tento web</a>
 									<h4 id="error">Vyplntě prosím zprávu</h4>
 									<div class="input-group my-3">
 										<textarea id="zprava" placeholder="Zpráva pro nás"></textarea>
@@ -240,7 +249,10 @@
 		<div class="row mb-3">
 			<div class="col-lg-8 offset-lg-2 text-center">
 				<p class="kopu">Audio - Kopu za SK Tetín</p>
-				<audio src="audio/Cteny-text-sbirka-Tetin.wav" controls></audio>
+				<audio controls>
+					<source src="audio/Cteny-text-sbirka-Tetin.mp3" type="audio/mpeg">
+					<source src="audio/Cteny-text-sbirka-Tetin.wav" type="audio/wav">
+				  </audio>
 				<ul class="nav justify-content-center mt-4">
 					<li class="nav-item">
 						<a class="nav-link " href="#tetin">SK Tetín</a>
@@ -316,6 +328,7 @@
 				}
 			});
 		});
+
 	</script>
 
 
